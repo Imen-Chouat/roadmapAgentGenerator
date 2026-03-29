@@ -12,13 +12,4 @@ app.use('/api/roadmap', roadmapRoute);
 app.use('/api/user', userRoute);
 app.use('/stats', statisticRouter);
 
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// AFTER all routes
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Public/index.html'));
-});
-
 export default app;
