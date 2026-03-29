@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat — GUIDE ME</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/chat.css" />
+</head>
+
+<body>
+    <div class="chat-shell">
+        <aside class="sidebar">
+            <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="GUIDE ME"
+                    class="brand-logo" />
+                <h2>GUIDE ME</h2>
+            </a>
+            <nav class="nav-list">
+                <a class="nav-link" href="dashboard.html">🗺️ <span>Dashboard</span></a>
+                <a class="nav-link" href="new-roadmap.html">➕ <span>New Roadmap</span></a>
+                <a class="nav-link active" href="chat.html">💬 <span>Chat AI</span></a>
+                <a class="nav-link" href="settings.html">⚙️ <span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn btn-secondary" style="width:100%;">Logout</button>
+            </div>
+        </aside>
+
+        <main class="chat-panel">
+            <div class="chat-header">
+                <button id="btn-toggle-sidebar" class="btn btn-secondary sidebar-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰ Menu</button>
+                <div>
+                    <h1 id="chat-roadmap-title">💬 Chat with GUIDE ME</h1>
+                    <p class="text-muted">Ask anything about your roadmap.</p>
+                </div>
+                <div id="quick-chips" class="quick-chips"></div>
+                <div class="chat-window">
+                    <div id="message-list" class="messages"></div>
+                </div>
+                <form id="chat-form" class="chat-input-row" novalidate>
+                    <textarea id="chat-input" placeholder="Ask your question..." rows="2"></textarea>
+                    <div class="send-row">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>
+                <div class="footer-note">GUIDE ME can make mistakes.</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/ai.js"></script>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/generator.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/chat.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

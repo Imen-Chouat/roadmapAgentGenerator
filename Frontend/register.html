@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register — GUIDE ME</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+
+<body class="auth-page">
+    <div class="auth-shell">
+        <section class="auth-visual">
+            <div>
+                <span class="badge">Create your account</span>
+                <h1>Start building your learning path.</h1>
+                <p>Inscrivez-vous pour créer des roadmaps personnalisés, suivre votre avancement et discuter avec
+                    l'assistant AI.</p>
+            </div>
+            <div style="display:grid; gap:1rem;">
+                <div style="background:rgba(56,189,248,0.06); border-radius:24px; padding:1.4rem;">
+                    <p style="color:var(--cyan-primary); font-weight:700;">“Planifiez aujourd'hui, progressez demain,
+                        obtenez votre prochain défi.”</p>
+                </div>
+                <div style="background:rgba(255,255,255,0.04); border-radius:24px; padding:1.4rem;">
+                    <p style="color:var(--text-muted);">Votre compte stocke vos roadmaps dans le navigateur. Aucun
+                        backend requis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="auth-panel">
+            <h2>Create account</h2>
+            <p class="small-text">Faites le premier pas vers votre nouveau projet.</p>
+            <form id="register-form" style="margin-top:2rem;" novalidate>
+                <div class="form-row split-2">
+                    <div class="form-group">
+                        <label class="input-label" for="first-name">First Name</label>
+                        <input id="first-name" class="input-field" type="text" placeholder="Amine" />
+                        <small class="input-feedback"></small>
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label" for="last-name">Last Name</label>
+                        <input id="last-name" class="input-field" type="text" placeholder="Saadi" />
+                        <small class="input-feedback"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="input-label" for="register-email">Email Address</label>
+                    <input id="register-email" class="input-field" type="email" placeholder="you@example.com" />
+                    <small class="input-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label class="input-label" for="register-password">Password</label>
+                    <input id="register-password" class="input-field" type="password" placeholder="········" />
+                    <small class="input-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <div style="display:flex; gap:0.5rem;">
+                        <span class="strength-segment"></span>
+                        <span class="strength-segment"></span>
+                        <span class="strength-segment"></span>
+                        <span class="strength-segment"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="input-label" for="register-role">Account type</label>
+                    <input id="register-role" class="input-field" type="text" value="User" readonly />
+                    <input type="hidden" name="role" value="user" />
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label><input id="terms-checkbox" type="checkbox" /> I agree to Terms of Service and Privacy
+                            Policy</label>
+                    </div>
+                    <small class="input-feedback"></small>
+                </div>
+                <div class="auth-actions">
+                    <button type="submit" class="btn">Create Account →</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

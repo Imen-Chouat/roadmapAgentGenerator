@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap Details — GUIDE ME</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/roadmap.css" />
+</head>
+
+<body>
+    <div class="roadmap-shell">
+        <aside class="sidebar">
+            <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="GUIDE ME"
+                    class="brand-logo" />
+                <h2>GUIDE ME</h2>
+            </a>
+            <nav class="nav-list">
+                <a class="nav-link" href="dashboard.html">🗺️ <span>Dashboard</span></a>
+                <a class="nav-link" href="new-roadmap.html">➕ <span>New Roadmap</span></a>
+                <a class="nav-link" href="chat.html">💬 <span>Chat AI</span></a>
+                <a class="nav-link" href="settings.html">⚙️ <span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn btn-secondary" style="width:100%;">Logout</button>
+            </div>
+        </aside>
+
+        <main class="roadmap-content">
+            <div class="roadmap-header">
+                <button id="btn-toggle-sidebar" class="btn btn-secondary sidebar-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰ Menu</button>
+                <div class="title-group">
+                    <button id="back-button" class="btn btn-secondary">← Back</button>
+                    <h1 id="roadmap-title">Web Development — Beginner</h1>
+                    <div class="roadmap-info">
+                        <span id="roadmap-meta">Beginner · 3 months</span>
+                        <span id="roadmap-date">Created Jan 2025</span>
+                    </div>
+                </div>
+                <div class="flex gap-2" style="flex-wrap:wrap;">
+                    <button id="chat-about-button" class="btn btn-secondary">💬 Chat about this</button>
+                    <button id="share-roadmap-button" class="btn">📤 Share</button>
+                    <button id="delete-roadmap-button" class="btn btn-secondary">🗑️ Delete</button>
+                </div>
+            </div>
+
+            <div id="kpi-summary" class="kpi-grid"></div>
+            <div class="timeline" id="steps-container"></div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/ai.js"></script>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/generator.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/roadmap.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

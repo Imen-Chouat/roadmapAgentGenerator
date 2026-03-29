@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUIDE ME — Your AI Roadmap Generator</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+    <header class="container" style="padding: 2rem 0;">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="site-brand flex items-center gap-3">
+                <img src="assets/images/logo.png" alt="Guide Me logo" class="site-logo" />
+                <span>GUIDE ME</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <a class="text-muted" href="#features">Features</a>
+                <a class="text-muted" href="#how-it-works">How it works</a>
+                <a class="text-muted" href="#pricing">Pricing</a>
+                <a class="btn btn-outline" href="login.html">Sign In</a>
+                <a class="btn" href="register.html">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding: 3rem 0;">
+        <section class="glass-card"
+            style="padding: 3rem; border-radius: 32px; border:1px solid rgba(255,255,255,0.08);">
+            <div class="flex justify-between" style="gap:2rem; flex-wrap:wrap; align-items:center;">
+                <div style="max-width:600px;">
+                    <span class="badge" style="margin-bottom:1rem;">✨ AI-Powered Roadmap Generator</span>
+                    <h1 style="font-size:clamp(3rem,5vw,5rem); line-height:1.02;">Tell us your goal.<br /><span
+                            style="background: linear-gradient(90deg, #38BDF8, #7DD3FC); -webkit-background-clip: text; color: transparent;">We
+                            build your path.</span></h1>
+                    <p style="color:var(--text-muted); font-size:1.05rem; max-width:520px; margin-top:1.25rem;">GUIDE ME
+                        crée des roadmaps personnalisés pour votre carrière tech, design, marketing ou IA. Configurez
+                        votre profil, posez vos questions et suivez votre progression.</p>
+                    <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                        <a class="btn" href="register.html">Generate My Roadmap →</a>
+                        <a class="btn btn-outline" href="#how-it-works">How it works</a>
+                    </div>
+                </div>
+                <div
+                    style="flex:1; min-width:320px; background: rgba(56,189,248,0.05); border:1px solid rgba(56,189,248,0.12); border-radius: 28px; padding:2rem; box-shadow: var(--shadow-glow);">
+                    <h2 style="margin-top:0;">Example Roadmap</h2>
+                    <div style="margin-top:1.5rem; display:grid; gap:1rem;">
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; color:var(--cyan-primary);">
+                            Web Development — Beginner <span>3 months</span></div>
+                        <div style="background:rgba(255,255,255,0.06); border-radius:18px; padding:1rem;">
+                            <div
+                                style="display:flex; justify-content:space-between; font-size:0.95rem; color:var(--text-muted);">
+                                HTML & CSS fundamentals <span>1w</span></div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.06); border-radius:18px; padding:1rem;">
+                            <div
+                                style="display:flex; justify-content:space-between; font-size:0.95rem; color:var(--text-muted);">
+                                JavaScript Basics <span>2w</span></div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.06); border-radius:18px; padding:1rem;">
+                            <div
+                                style="display:flex; justify-content:space-between; font-size:0.95rem; color:var(--text-muted);">
+                                React Fundamentals <span>2w</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" style="margin-top:4rem;">
+            <div class="flex justify-between" style="align-items:flex-end; gap:2rem; flex-wrap:wrap;">
+                <div><span class="badge">How it works</span>
+                    <h2 style="margin-top:1rem;">3 étapes pour lancer votre carrière.</h2>
+                </div>
+                <a class="btn" href="register.html">Create Free Account →</a>
+            </div>
+            <div class="grid-three"
+                style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin-top:2rem;">
+                <div class="card" style="padding:1.8rem;">
+                    <h3>1️⃣ Tell Us Your Goal</h3>
+                    <p>Answer a few questions about your domain and level.</p>
+                </div>
+                <div class="card" style="padding:1.8rem;">
+                    <h3>2️⃣ AI Builds Your Path</h3>
+                    <p>Our AI generates a complete personalized roadmap.</p>
+                </div>
+                <div class="card" style="padding:1.8rem;">
+                    <h3>3️⃣ Follow & Succeed</h3>
+                    <p>Step by step guidance with resources and advice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" style="margin-top:4rem;">
+            <h2>Features</h2>
+            <div class="grid-three"
+                style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin-top:1.5rem;">
+                <div class="glass-card" style="padding:1.8rem;"><strong>🗺️ Personalized Roadmaps</strong>
+                    <p>Des plans adaptés à votre profil et vos objectifs.</p>
+                </div>
+                <div class="glass-card" style="padding:1.8rem;"><strong>🤖 AI Chat Assistant</strong>
+                    <p>Posez vos questions et obtenez des réponses pertinentes.</p>
+                </div>
+                <div class="glass-card" style="padding:1.8rem;"><strong>📚 Curated Resources</strong>
+                    <p>Ressources sélectionnées pour aller plus vite.</p>
+                </div>
+                <div class="glass-card" style="padding:1.8rem;"><strong>📊 Progress Tracking</strong>
+                    <p>Suivez l’avancement de vos étapes en temps réel.</p>
+                </div>
+                <div class="glass-card" style="padding:1.8rem;"><strong>💾 Saved Roadmaps</strong>
+                    <p>Retrouvez vos parcours à tout moment.</p>
+                </div>
+                <div class="glass-card" style="padding:1.8rem;"><strong>🔄 Multiple Paths</strong>
+                    <p>Créez plusieurs roadmaps pour comparer vos options.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" style="margin-top:4rem;">
+            <h2>Testimonials</h2>
+            <div class="grid-three"
+                style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin-top:1.5rem;">
+                <div class="card" style="padding:1.8rem;">
+                    <p>"GUIDE ME m'a aidé à structurer mon apprentissage en IA avec clarté."</p><strong>— Leila, Data
+                        Enthusiast</strong>
+                </div>
+                <div class="card" style="padding:1.8rem;">
+                    <p>"J'ai trouvé un job plus vite grâce à une roadmap concrète."</p><strong>— Tariq, Web
+                        Developer</strong>
+                </div>
+                <div class="card" style="padding:1.8rem;">
+                    <p>"Le chat AI est une vraie aide quand je bloque sur une étape."</p><strong>— Amina, UX
+                        Designer</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing"
+            style="margin-top:4rem; text-align:center; padding:3rem 2rem; background:rgba(56,189,248,0.05); border-radius:32px;">
+            <h2>Ready to start your journey?</h2>
+            <p style="max-width:640px; margin:0.8rem auto; color:var(--text-muted);">Créez un compte gratuit et générez
+                votre premier roadmap en quelques minutes.</p>
+            <a class="btn" href="register.html">Create Free Account →</a>
+        </section>
+    </main>
+
+    <footer class="container text-center" style="padding:2rem 0; color:var(--text-muted);">
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <span>© 2025 Guide Me</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

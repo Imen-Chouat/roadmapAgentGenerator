@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — GUIDE ME</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="GUIDE ME"
+                    class="brand-logo" />
+                <h2>GUIDE ME</h2>
+            </a>
+            <nav class="nav-list">
+                <a class="nav-link active" href="dashboard.html">🗺️ <span>Dashboard</span></a>
+                <a class="nav-link" href="new-roadmap.html">➕ <span>New Roadmap</span></a>
+                <a class="nav-link" href="chat.html">💬 <span>Chat AI</span></a>
+                <a class="nav-link" href="settings.html">⚙️ <span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <div id="sidebar-avatar" class="user-badge">GM</div>
+                    <div>
+                        <strong id="sidebar-name">Guide Me</strong>
+                        <div id="sidebar-email" class="small-text">you@example.com</div>
+                    </div>
+                </div>
+                <button id="btn-logout" class="btn btn-secondary" style="width:100%; margin-top:1rem;">Logout</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="topbar">
+                <button id="btn-toggle-sidebar" class="btn btn-secondary sidebar-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰ Menu</button>
+                <div class="page-title">
+                    <h1>My Roadmaps</h1>
+                    <p class="text-muted">Here are your learning paths</p>
+                </div>
+                <div class="flex gap-2">
+                    <input id="search-roadmaps" class="input-field search-box" type="search"
+                        placeholder="Search roadmaps..." />
+                    <button id="btn-create-roadmap" class="btn">Create New Roadmap</button>
+                </div>
+            </div>
+
+            <section class="status-grid">
+                <div class="status-card">
+                    <p>Roadmaps</p><strong id="roadmap-count">0</strong>
+                </div>
+                <div class="status-card">
+                    <p>Active Goals</p><strong>Build Skills</strong>
+                </div>
+                <div class="status-card">
+                    <p>Saved Plans</p><strong>LocalStorage</strong>
+                </div>
+            </section>
+
+            <section style="margin-top:2rem;" id="roadmap-list"></section>
+
+            <section id="empty-state" class="empty-state" style="display:none; margin-top:2rem;">
+                <div class="icon-large">🗺️</div>
+                <h3>No roadmaps yet</h3>
+                <p>Start by creating your first learning path.</p>
+                <button id="btn-generate-first" class="btn">Generate My First Roadmap →</button>
+            </section>
+        </main>
+    </div>
+
+    <div id="delete-roadmap-modal" class="modal-backdrop">
+        <div class="modal-card">
+            <h3>Delete roadmap</h3>
+            <p>Êtes-vous sûr de vouloir supprimer cette roadmap ?</p>
+            <div class="modal-actions">
+                <button id="cancel-roadmap-delete" class="btn btn-secondary">Cancel</button>
+                <button id="confirm-roadmap-delete" class="btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

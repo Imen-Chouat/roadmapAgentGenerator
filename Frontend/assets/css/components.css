@@ -1,0 +1,29 @@
+/* Composants réutilisables pour GUIDE ME */
+.btn-sm {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+
+.text-highlight {
+    color: var(--cyan-primary);
+}
+
+.card-ghost {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--cyan-primary), var(--cyan-light));
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,102 @@
+#####
+
+GET http://localhost:5000/api/roadmap/
+Content-Type: application/json
+
+####
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+  "firstname": "Imen",
+  "lastname": "Test",
+  "email": "imen@test.com",
+  "password": "123456"
+}
+
+####
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "imen2@test.com",
+  "password": "123456"
+}
+
+####
+POST http://localhost:5000/api/roadmap/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzgyY2Y3NjNjYzU0YzI4YTNlMDBjYSIsImlhdCI6MTc3NDcyNjY3NX0.3qARnUtZ_G_hyVadnUhRc_QN8o1SpKItA2aoQq-eFj8
+
+
+####
+GET http://localhost:5000/api/roadmap/get/69c82f6fd123d0116fc785a8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzgyY2Y3NjNjYzU0YzI4YTNlMDBjYSIsImlhdCI6MTc3NDcyNjY3NX0.3qARnUtZ_G_hyVadnUhRc_QN8o1SpKItA2aoQq-eFj8
+
+####
+PUT http://localhost:5000/api/roadmap/updateChapter/1/1
+Authorization: Bearer <token>
+
+
+####
+DELETE http://localhost:5000/api/roadmap/delete/1
+Authorization: Bearer <token>
+
+
+
+####
+PUT http://localhost:5000/api/roadmap/update/1
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "Updated Roadmap Title",
+  "description": "Updated description for the roadmap.",
+  "field": "Web Development",
+  "level": "Beginner",
+  "duration": "3 months"
+}
+
+
+####
+GET  http://localhost:5000/api/user/profile
+Authorization: Bearer <token>
+
+
+#### 
+GET  http://localhost:5000/api/user/roadmaps
+Authorization: Bearer <token>
+
+####
+GET http://localhost:5000/api/user/all
+
+
+####
+GET http://localhost:5000/api/user/allWithRoadmaps
+Authorization: Bearer <token>
+
+####
+GET http://localhost:5000/api/user/delete
+Authorization: Bearer <token>
+
+
+####
+PUT http://localhost:5000/api/user/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzgyY2Y3NjNjYzU0YzI4YTNlMDBjYSIsImlhdCI6MTc3NDcyNjY3NX0.3qARnUtZ_G_hyVadnUhRc_QN8o1SpKItA2aoQq-eFj8
+Content-Type: application/json 
+
+{
+  "firstname": "Imen",
+  "lastname": "Test",
+  "email": "imen2@test.com"
+}
+
+
+####
+PUT http://localhost:5000/api/user/changePassword
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzgyY2Y3NjNjYzU0YzI4YTNlMDBjYSIsImlhdCI6MTc3NDcyNjY3NX0.3qARnUtZ_G_hyVadnUhRc_QN8o1SpKItA2aoQq-eFj8
+Content-Type: application/json
+
+{
+  "currentPassword": "123456",
+  "newPassword": "newpassword123"
+}

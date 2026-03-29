@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings — GUIDE ME</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="GUIDE ME"
+                    class="brand-logo" />
+                <h2>GUIDE ME</h2>
+            </a>
+            <nav class="nav-list">
+                <a class="nav-link" href="dashboard.html">🗺️ <span>Dashboard</span></a>
+                <a class="nav-link" href="new-roadmap.html">➕ <span>New Roadmap</span></a>
+                <a class="nav-link" href="chat.html">💬 <span>Chat AI</span></a>
+                <a class="nav-link active" href="settings.html">⚙️ <span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn btn-secondary" style="width:100%;">Logout</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="topbar">
+                <button id="btn-toggle-sidebar" class="btn btn-secondary sidebar-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰ Menu</button>
+                <div class="page-title">
+                    <h1>Settings</h1>
+                    <p class="text-muted">Manage your account and preferences.</p>
+                </div>
+
+                <div class="card" style="padding:2rem; margin-top:1rem;">
+                    <h3>Profile</h3>
+                    <div class="form-row split-2" style="margin-top:1rem; gap:1rem;">
+                        <div>
+                            <label class="input-label">First Name</label>
+                            <input id="settings-first-name" class="input-field" type="text" />
+                        </div>
+                        <div>
+                            <label class="input-label">Last Name</label>
+                            <input id="settings-last-name" class="input-field" type="text" />
+                        </div>
+                    </div>
+                    <div style="margin-top:1rem;">
+                        <label class="input-label">Bio</label>
+                        <textarea id="settings-bio" class="input-field"></textarea>
+                    </div>
+                    <button id="btn-save-profile" class="btn" style="margin-top:1rem;">Save Profile</button>
+                </div>
+
+                <div class="card"
+                    style="padding:2rem; margin-top:1.5rem; background:rgba(248,113,113,0.08); border-color:rgba(248,113,113,0.2);">
+                    <h3>Danger Zone</h3>
+                    <p style="color:var(--text-muted);">Delete your account and all saved roadmaps. This action is
+                        irreversible.</p>
+                    <button id="btn-delete-account" class="btn btn-secondary"
+                        style="margin-top:1rem; background:#F87171; border-color:rgba(248,113,113,0.4); color:#fff;">Delete
+                        My Account</button>
+                </div>
+        </main>
+    </div>
+
+    <div id="delete-account-modal" class="modal-backdrop">
+        <div class="modal-card">
+            <h3>Delete My Account</h3>
+            <p>Are you sure? This action is irreversible. Type DELETE to confirm.</p>
+            <input id="confirm-delete-text" class="input-field" type="text" placeholder="Type DELETE to confirm" />
+            <div class="modal-actions">
+                <button id="confirm-delete-account" class="btn"
+                    style="background:#F87171; border-color:rgba(248,113,113,0.4); color:#fff;">Confirm Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { lucide && lucide.replace(); });</script>
+</body>
+
+</html>

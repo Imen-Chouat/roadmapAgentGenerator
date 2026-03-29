@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>Guide Me logo</title>
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="#07121F" stroke="url(#blueGrad)" stroke-width="8" />
+  <circle cx="60" cy="60" r="40" fill="#0B1A2F" />
+  <path d="M60 16 L78 32 L60 38 L42 32 Z" fill="url(#capGrad)" />
+  <path d="M60 16 L72 28 L60 31 L48 28 Z" fill="#0EA5E9" opacity="0.9" />
+  <path d="M36 44 L84 44 L72 32 L48 32 Z" fill="#0B1A2F" />
+  <path d="M36 44 L84 44 L60 66 Z" fill="#0E2946" opacity="0.95" />
+  <circle cx="60" cy="74" r="18" fill="#11213A" />
+  <path d="M60 40 L66 72 L60 74 L54 72 Z" fill="#38BDF8" />
+  <path d="M60 74 L44 60 L60 56 L76 60 Z" fill="#38BDF8" opacity="0.85" />
+  <path d="M60 24 L68 44 L60 42 L52 44 Z" fill="#A5F3FC" />
+  <path d="M52 74 L60 90 L68 74 Z" fill="#7DD3FC" opacity="0.8" />
+  <path d="M60 36 L69 56 L60 58 L51 56 Z" fill="#38BDF8" opacity="0.95" />
+</svg>
