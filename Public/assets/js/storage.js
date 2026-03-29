@@ -6,7 +6,7 @@ const STORAGE_KEYS = {
     roadmaps: 'guide-me-roadmaps'
 };
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = '/api';
 const API_TIMEOUT_MS = 7000;
 
 function getAuthToken() {

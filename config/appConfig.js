@@ -11,7 +11,7 @@ const appConfig = (app) => {
     app.use(cors());
 
     // Serve frontend static files
-    app.use(express.static(path.join(__dirname, '../project')));
+    app.use(express.static(path.join(__dirname, '../Public')));
 
     // Global error handler
     app.use((err, req, res, next) => {
